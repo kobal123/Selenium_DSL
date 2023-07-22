@@ -319,47 +319,12 @@ Example:
 ```
     from 'cars' by id select 'Audi'
 ```
-***
 
-### Table click
-Clicks a cell from a table.
-This command is useful when dealing with dynamic tables, or when a table filter is not provided
-
-Limitations:
-
-- Currently, it does not work if there are more than 1 tables on a page.
-- If no table header cells are used in the table.
-
-Usage:
-
-```
-   click cell "HEADER" from table where "HEADER2" = "VALUE"
-```
-
-
-Example:
-
-Given the following table
-
-![table](readme_images/commands/table_click.png "Example Table")
-
-Let us click the "NI Hungary" cell:
-
-```
-    click cell "Company" from table where "Country" = "Hungary"
-    click cell "Company" from table where "Company" = "NI Hungary"
-```
-
-
-***
-
-## Example inputs
-For complete example test files see the [example input files](selenium_test_dsl/resources/example_inputs)
 
 ***
 ## Limitations
 
-As of right now the language cannot deal with:
+The language cannot deal with:
 
 - popup windows
 - changing between multiple windows
