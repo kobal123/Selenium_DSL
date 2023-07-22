@@ -1,0 +1,5 @@
+.idea
+*.log
+*.png
+selenium_test_dsl/__pycache__
+
